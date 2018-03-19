@@ -5,6 +5,6 @@ client.on('connect', () => {
   console.log('connected')
 })
 
-client.on('error', function (err) {
-  console.log('Error ' + err)
+client.on('error', err => {
+  console.error(err)
 })
